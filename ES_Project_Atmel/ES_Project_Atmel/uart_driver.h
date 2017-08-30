@@ -1,4 +1,4 @@
-void uart_Init(unsigned int);
+void uart_init(unsigned int);
 
 void uart_sending(unsigned char);
 

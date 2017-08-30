@@ -11,26 +11,45 @@
 #include <avr/interrupt.h>
 #include <avr/io.h>
 #include <stdint.h>
+#include <stdio.h>
 
-//#include "uart_driver.h"
+#include "uart_driver.h"
+
+
 
 int main(void)
 {
-	// DDRA |= (1<<DDA5); //6th bit of PORTA(PA5) = OUTPUT
+	
+	
+	
+	//fdevopen(uart_sending, uart_receiving);
+	uart_init(31); // from BR formula in datasheet
 	DDRA = 0xFF;
+	while(1)
+	{
+		uart_sending('C');
+		PORTA |= (1<<1);
+		_delay_ms(100);
+		PORTA &=~(1<<1);
+		_delay_ms(100);
+	}
+	//WQOIEJQOWIEJ
+	
+
+
+	// DDRA |= (1<<DDA5); //6th bit of PORTA(PA5) = OUTPUT
+	//DDRA = 0xFF;
 	//DDRA = (1<<PA5);
 	
-    while(1)
-    {
+    //while(1)
+    //{
 		
-		PORTA |= (1<<1);
+		//PORTA |= (1<<1);
 		
-		_delay_ms(500);
-		PORTA &=~(1<<1);
-		_delay_ms(500);
-		
-		
-		
+		//_delay_ms(500);
+		//PORTA &=~(1<<1);
+		//_delay_ms(500);
+
 	//	PORTA |= (1<<PA0);
 		//_delay_ms(500);
         /*PORTA |= 0x20; //Pin5 ON
@@ -38,6 +57,8 @@ int main(void)
 		//PORTA &= 0xDF; //Pin5 OFF
 		PORTA |= 0x00; //Pin5 OFF
 		_delay_ms(500); //Wait for 0.5s*/
-    }
+    //}
+	
+	
 	return 0;
 }

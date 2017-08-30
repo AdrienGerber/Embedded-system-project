@@ -9,7 +9,8 @@
 #define F_CPU 16000000 //clock frequency at 16MHz
 #define BAUD 9600
 #define MYUBRR FOSC/16/BAUD-1
-#include "util/delay.h"
+#include <util/delay.h>
+#include <avr/io.h>
 #include "uart_driver.h"
 
 void uart_init(unsigned int ubrr){
