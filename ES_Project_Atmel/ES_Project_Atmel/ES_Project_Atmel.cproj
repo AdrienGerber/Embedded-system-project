@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>6.2</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
-    <ProjectGuid>{271b904e-7aa3-4af8-8043-4aa850ac784e}</ProjectGuid>
+    <ProjectGuid>{f5dd1840-5304-4a24-914b-c64280024355}</ProjectGuid>
     <avrdevice>ATmega162</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>ES_Project_Atmel</AssemblyName>
-    <Name>ES_Project_Atmel</Name>
-    <RootNamespace>ES_Project_Atmel</RootNamespace>
+    <AssemblyName>ES_Project_2</AssemblyName>
+    <Name>ES_Project_2</Name>
+    <RootNamespace>ES_Project_2</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -96,7 +96,7 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ES_Project_Atmel.c">
+    <Compile Include="ES_Project_2.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="uart_driver.c">

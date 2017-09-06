@@ -12,6 +12,7 @@
 #include <util/delay.h>
 #include <avr/io.h>
 #include "uart_driver.h"
+#include <stdio.h>
 
 void uart_init(unsigned int ubrr){
 	/* Set baud rate */
@@ -36,20 +37,19 @@ void uart_sending(unsigned char data){
 
 unsigned char uart_receiving(void){
 	/* Receiving frames with 5 to 8 Data Bits */
-	
+
 	// waiting for data
 	while(!(UCSR0A & (1 << RXC0)))
 		;
 			
-	/* b. App wants to be notified when new char is received (?)*/
+	/* b. App wants to be notified when new char is received (?) enable int*/
 		
 	return UDR0;
 }
 
 
 
-/* what could be the main function testing uart:
-
+/* what could be the main function testing uart:*
 void main(void){
 	uart_init(31) // from BR formula in datasheet
 	
@@ -59,6 +59,5 @@ void main(void){
 		_delay_ms(2000);
 	}
 	
-}
+}*/
 
-*/
