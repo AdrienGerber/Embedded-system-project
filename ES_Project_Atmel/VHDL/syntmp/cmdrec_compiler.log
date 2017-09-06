@@ -1,0 +1,8 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  "C:\users\asgerber\documents\atmel studio\6.2\embedded-system-project\es_project_atmel\vhdl\synwork\es_vhdl_module_comp.srs"  -top  es_vhdl_module  -prodtype  synplify_pro  -nostructver -dfltencoding sequential -encrypt  -pro  -dmgen  "C:\users\asgerber\documents\atmel studio\6.2\embedded-system-project\es_project_atmel\vhdl\dm"  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work "C:\users\asgerber\documents\atmel studio\6.2\embedded-system-project\es_project_atmel\vhdl\es_vhdl_module.vhd" -loga  "C:\users\asgerber\documents\atmel studio\6.2\embedded-system-project\es_project_atmel\vhdl\es_vhdl_module.srr" 
+rc:0 success:1
+C:\users\asgerber\documents\atmel studio\6.2\embedded-system-project\es_project_atmel\vhdl\synwork\es_vhdl_module_comp.srs|o|1504706566|2088
+"C:\users\asgerber\documents\atmel|i|0|0
+studio\6.2\embedded-system-project\es_project_atmel\vhdl\es_vhdl_module.vhd"|i|0|0
+C:\users\asgerber\documents\atmel studio\6.2\embedded-system-project\es_project_atmel\vhdl\es_vhdl_module.srr|o|1504706566|1614
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401223898|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401224104|5533184

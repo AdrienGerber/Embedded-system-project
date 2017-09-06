@@ -1,0 +1,16 @@
+Section Cross Reference File
+Design 'es_vhdl_module' created Wed Sep 06 16:02:53 2017
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     a11
+        Input     a10
+        Input     a9
+        Input     a8
+        Output     ram_cs
+        Output     adc_cs
+        Output     oled_cs
+        Output     oled_dc
+End

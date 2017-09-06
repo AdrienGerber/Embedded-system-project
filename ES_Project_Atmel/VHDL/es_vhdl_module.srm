@@ -1,0 +1,186 @@
+%%% protect protected_file
+f "c:\isplever_classic2_0\synpbase\lib\vhd\std.vhd"; #file 0
+af  .is_vhdl 1;
+af  .child_list "-1";
+af  .parent_list "-1";
+f "c:\isplever_classic2_0\synpbase\lib\vhd\snps_haps_pkg.vhd"; #file 1
+af  .is_vhdl 1;
+af  .child_list "-1";
+af  .parent_list "-1";
+f "c:\isplever_classic2_0\synpbase\lib\vhd\std1164.vhd"; #file 2
+af  .is_vhdl 1;
+af  .child_list "-1";
+af  .parent_list "-1";
+f "c:\isplever_classic2_0\synpbase\lib\vhd\numeric.vhd"; #file 3
+af  .is_vhdl 1;
+af  .child_list "-1";
+af  .parent_list "-1";
+f "c:\isplever_classic2_0\synpbase\lib\vhd\umr_capim.vhd"; #file 4
+af  .is_vhdl 1;
+af  .child_list "-1";
+af  .parent_list "-1";
+f "c:\isplever_classic2_0\synpbase\lib\vhd\arith.vhd"; #file 5
+af  .is_vhdl 1;
+af  .child_list "-1";
+af  .parent_list "-1";
+f "c:\isplever_classic2_0\synpbase\lib\vhd\unsigned.vhd"; #file 6
+af  .is_vhdl 1;
+af  .child_list "-1";
+af  .parent_list "-1";
+f "c:\users\asgerber\documents\atmel studio\6.2\embedded-system-project\es_project_atmel\vhdl\es_vhdl_module.vhd"; #file 7
+af  .is_vhdl 1;
+af  .child_list "-1";
+af  .parent_list "-1";
+VNAME 'mach.IBUF.prim'; # view id 0
+VNAME 'mach.OBUF.prim'; # view id 1
+VNAME 'mach.AND2.prim'; # view id 2
+VNAME 'mach.INV.prim'; # view id 3
+@ERMRlENORzQAwsRbH
+l;N3PRHs#bH4lR;P
+NR$3#MH_DMs	CH"8RlENO3zQAws3bH;l"
+mFR;R
+HQ
+j;N3HRHN#b8;R4
+fbRjR:jLRkVmRRmQ
+j;bjRf:0jRsRkC0CskRBeB;R
+bfjj:RDVN#VCRNCD#R7th;R
+MROlNEARmzbwRs;Hl
+RNP3bH#sRHl4N;
+P#R3$DM_HCM	sRH8"OlNEA3mzbw3s"Hl;R
+FmN;
+HHR3#8bNR
+4;HjRQ;R
+bfjj:RVLkRmmRR;Qj
+fbRjR:j0CskRk0sCBReBb;
+R:fjjNRVDR#CV#NDChRt7M;
+RNRlOqERhR7.blsH;P
+NR#3HblsHR
+4;N3PR#_$MD	HMC8sHRN"lOqE3h37.blsH"F;
+R
+m;HjRQ;R
+HQ
+4;bjRf:0jRsRkC0CskRBeB;R
+bfjj:RDVN#VCRNCD#R7th;R
+bfjj:R8NMPRRmmjRQR;Q4
+RMRlENOReQhRHbslN;
+PHR3#Hbsl;R4
+RNP3M#$_MDH	HCs8lR"N3OEQ3heblsH"F;
+R
+m;HjRQ;R
+bfjj:RPHMRmmRR;Qj
+fbRjR:j0CskRk0sCBReBb;
+R:fjjNRVDR#CV#NDChRt7@;
+ 
+
+
+
+ftell;
+@E@MR@n(::n(::R.jRsIF	#RC_8PEDF_l8CkDRELCNFPHs;ND
+RNP3MDHCRMFc
+n;N3PRHE#P84DR;P
+NR#3H_8PED;R4
+RNP3ONsEDVHC;R(
+RNP38lFkVDCHRDC(N;
+POR3DMCNk#b_0.Cb_l0HC3Rjjjjjj
+j;N3PRONDCM_kb#b0C4H_0ljCR3jjjj;jj
+RNP3l#00#DH0l0HC3Rjjjjjj
+j;NFPRs_HoH0M#_RFV"_C#PDE8_8lFk"DC;P
+NRs3FHNohl"CRCP#_E_8DlkF8D;C"
+RNP3M#$_sl##C_#0RH8jN;
+PVR3D_FI#00NC
+R{N3PRVIDF_FbsbN#_bHbDC48R;P
+NRD3VFkI_MkHJHCVH8;R4
+RNP3FVDIN_bs0CM_#Hb_#N#HCoM8;R4
+RNP3FVDIF_DF_b#L	sFCjMR;;
+}
+RNP#_$MHH#lGDC8NRMo4N;
+P#R3$lM_Vo#_sbFk_RH8jN;
+P#R3$MM_kElONRs#c;Uj
+RNP3M#$_MDH	HCs8{R" B4n4wjg- Ucnw-cUg.-(-U7A  d(4q4g6.w}
+";N3PRO_8L#CNPRN{
+P$R#MC_sVCCsM_OCOODF	
+R{N1PR$C#0l
+R{N3PR#_$MsOCVD	FO_b0$C;Rg
+
+};}};
+;P
+NRL3F#0Fb8CFMR
+4;H@R@(::UU::U4Nj:4N4R4
+4;N3HRs_0DFosHMCNlR4"N4
+";NpHRm"BRu;4"
+@HR@g(::gU:::4jNR4jN;4j
+RNH3Ds0_HFsolMNCNR"4;j"
+RNHpRmB""u.;R
+H@:@(4Uj:::4jgg:NR;Ng
+RNH3Ds0_HFsolMNCNR"g
+";NpHRm"BRu;d"
+@HR@4(:4::U4g4::RNUN
+U;N3HRs_0DFosHMCNlRU"N"N;
+HmRpBuR"c
+";F@R@(d:4:4U:dd:4:lsN_RO#s_NlO
+#;N3HRs_0DFosHMCNlRN"sl#_O"N;
+HmRpBuR"4;g"
+@FR@4(:c::U44c:d8:NO#_ORON8_;O#
+RNH3Ds0_HFsolMNCNR"8OO_#
+";NpHRm"BRu"4U;R
+F@:@(4U6:::464Fc:D_C8OF#RD_C8O
+#;N3HRs_0DFosHMCNlRD"FCO8_#
+";NpHRm"BRu"4(;R
+F@:@(4Un:::4n4Fc:D_C88FORD_C88
+O;N3HRs_0DFosHMCNlRD"FC88_O
+";NpHRm"BRu"4n;R
+sfjj:ROlNEARQzbwRsRHlN
+44SNm=4O4_
+jSQ=4N4;R
+sfjj:ROlNEARQzbwRsRHlN
+4jSNm=4Oj_
+jSQ=jN4;R
+sfjj:ROlNEARQzbwRsRHlNSg
+mg=N_SO
+QNj=gs;
+R:fjjNRlOQERARzwblsHR
+NUSNm=U
+_OS=QjN
+U;sjRf:ljRNROEmwAzRHbslNRsl#_O
+=Sms_NlOS#
+QNj=4O4_;R
+sfjj:ROlNEARmzbwRsRHlN_8OOS#
+m8=NO#_O
+jSQ=ON8__O#Os;
+R:fjjNRlOmERARzwblsHRCFD8#_O
+=SmF8DC_
+O#S=QjF8DC__O#Os;
+R:fjjNRlOmERARzwblsHRCFD8O_8
+=SmF8DC_
+8OS=QjF8DC__8OOs;
+R:fjjNRlOqERhR7.blsHRCFD8O_8N
+M8SFm=D_C88OO_
+jSQ=_NgOQ
+S4M=k4D_FCO8_#s;
+R:fjjNRlOQERhbeRsRHlNHg_
+=SmNHg_
+jSQ=_NgOs;
+R:fjjNRlOqERhR7.blsHRCFD8#_ON
+M8SFm=D_C8OO#_
+jSQ=_NgHQ
+S4M=k4D_FCO8_#s;
+R:fjjNRlOqERhR7.blsHRON8_NO#MS8
+m8=NO#_O_SO
+QNj=4Oj_
+4SQ=4N4_
+H;sjRf:ljRNROEQRheblsHRjN4_SH
+m4=Nj
+_HS=QjN_4jOs;
+R:fjjNRlOQERhbeRsRHlN_44Hm
+S=4N4_SH
+QNj=4O4_;R
+sfjj:ROlNEhRq7b.RsRHlk_M4F8DC_
+O#Skm=MF4_D_C8OS#
+QNj=4Hj_
+4SQ=4N4_
+H;bjRf:VjRNCD#R7thR7th;R
+bfjj:Rk0sCBReBBReB
+;
+
+
+@ 

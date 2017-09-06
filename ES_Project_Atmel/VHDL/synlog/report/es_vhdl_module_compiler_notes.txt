@@ -1,0 +1,5 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\asgerber\documents\atmel studio\6.2\embedded-system-project\es_project_atmel\vhdl\es_vhdl_module.vhd":6:7:6:20|Top entity is set to es_vhdl_module.
+@N: CD630 :"C:\users\asgerber\documents\atmel studio\6.2\embedded-system-project\es_project_atmel\vhdl\es_vhdl_module.vhd":6:7:6:20|Synthesizing work.es_vhdl_module.behavioral 
+

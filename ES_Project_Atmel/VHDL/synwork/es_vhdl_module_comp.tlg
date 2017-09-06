@@ -1,0 +1,3 @@
+@N: CD630 :"C:\users\asgerber\documents\atmel studio\6.2\embedded-system-project\es_project_atmel\vhdl\es_vhdl_module.vhd":6:7:6:20|Synthesizing work.es_vhdl_module.behavioral 
+Post processing for work.es_vhdl_module.behavioral
+@W: CL159 :"C:\users\asgerber\documents\atmel studio\6.2\embedded-system-project\es_project_atmel\vhdl\es_vhdl_module.vhd":11:8:11:9|Input a8 is unused

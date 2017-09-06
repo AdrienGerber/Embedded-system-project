@@ -1,0 +1,33 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file c:/users/asgerber/documents/atmel studio/6.2/embedded-system-project/es_project_atmel/vhdl\es_vhdl_module.prj
+#-- Written on Wed Sep 06 16:02:29 2017
+
+
+#device options
+set_option -technology ispGAL
+
+#compilation/mapping options
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "es_vhdl_module.vhd"
+
+#-- top module name
+set_option -top_module es_vhdl_module
+
+#-- set result format/file last
+project -result_file "es_vhdl_module.edi"
+
+#-- error message log file
+project -log_file es_vhdl_module.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run
