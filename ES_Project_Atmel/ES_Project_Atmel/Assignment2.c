@@ -52,7 +52,7 @@ void SRAM_test(void)
 
 
 
-int main(void){	
+int main2(void){	
 	/*D Latch test
 	DDRA |= 0xFF;
 	DDRE |= 0x02;
@@ -76,11 +76,31 @@ int main(void){
 	uart_init(31);
 	
 	SRAM_test();
+	/*
+	DDRC |= 0xFF;
+	
 	while(1){
-		//scanf("%s", chars);
-		//printf("Hey: %s\n", chars);
 		
-	}
+		// OLED Command
+		//PORTC &= 0x00;
+		PORTC = 0x01;
+		_delay_ms(500);
+		
+		// OLED Data
+		//PORTC &= 0x00;
+		PORTC = 0x02;
+		_delay_ms(500);
+
+		// ADC
+		//PORTC &= 0x00;
+		PORTC = 0x04;
+		_delay_ms(500);
+		
+		// SRAM
+		//PORTC &= 0x00;
+		PORTC = 0x08;
+		_delay_ms(500);
+	}*/
 	
 	return 0;
 }

@@ -15,6 +15,7 @@
 #include <util/delay.h>
 #include <avr/io.h>
 #include "uart_driver.h"
+#include "joystick_driver.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -38,7 +39,7 @@ void SRAM_test(void)
 		ext_ram[i] = some_value;
 		uint8_t retreived_value = ext_ram[i];
 		if (retreived_value != some_value) {
-			//printf("Write phase error: ext_ram[%4d] = %02X (should be %02X)\n", i,retreived_value, some_value);
+			printf("Write phase error: ext_ram[%4d] = %02X (should be %02X)\n", i,retreived_value, some_value);
 			write_errors++;
 		}
 	}
@@ -49,7 +50,7 @@ void SRAM_test(void)
 		uint8_t some_value = rand();
 		uint8_t retreived_value = ext_ram[i];
 		if (retreived_value != some_value) {
-			//printf("Retrieval phase error: ext_ram[%4d] = %02X (should be %02X)\n",i, retreived_value, some_value);
+			printf("Retrieval phase error: ext_ram[%4d] = %02X (should be %02X)\n",i, retreived_value, some_value);
 			retrieval_errors++;
 		}
 	}
@@ -61,59 +62,30 @@ void SRAM_test(void)
 
 
 int main(void){
-	/*ASSIGNMENT 1
-	unsigned char received_value;
-	uart_init(31); // from BR formula in datasheet
-	DDRB = 0x01;
-	while(1){
-		uart_sending('K');
-		uart_sending('B');
-		PORTB |= (1<<0);
-		_delay_ms(100);
-		PORTB &=~(1<<0);
-		_delay_ms(100);
 		
-		received_value = uart_receiving();
-		printf("%u", received_value);}*/
-	
-	/*D Latch test
-	DDRA |= 0xFF;
-	DDRE |= 0x02;
-	while(1){
-		PORTA &= 0x00;
-		PORTA |= 0xF0;
-		PORTE |= 0x02;
-		_delay_ms(100);
-		PORTE &= 0xFD;
-		_delay_ms(100);
-		PORTA &= 0x00;
-		PORTA |= 0x0F;
-		PORTE |= 0x02;
-		_delay_ms(100);
-		PORTE &= 0xFD;
-		_delay_ms(100);} */
-
+	MCUCR |= (1<<SRE); //Enable SRE of MCUCR to use SRAM
 	fdevopen(&uart_sending, &uart_receiving);
 	uart_init(31);
 	
-	//FILE uart_str = FDEV_SETUP_STREAM(uart_sending, NULL, _FDEV_SETUP_RW);
-	//UCSR0B |= (1<<RXEN0) | (1<<TXEN0);
-	//UCSR0C |= (1<<URSEL0) | (1<<UCSZ00) | (1 << UCSZ10);
-	//UBRR0L = UART_BAUD_REGISTERS;
-	
-	//fprintf(&uart_str, "Hello\n");
-	//stdout = &uart_str;
-	//char chars[100];
-
-	
 	//SRAM_test();
+
+	int joystick_direction = getJoystickDirection(2.5, 2.5, 2.5, 2.5);
+	printf("Direction: %d\n", joystick_direction);
 	
-	SRAM_test();
-	while(1){
-		//scanf("%s", chars);
-		//printf("Hey: %s\n", chars);
-		
-	}
+	joystick_direction = getJoystickDirection(2.5, 2.5, 0.0, 2.5);
+	printf("Direction: %d\n", joystick_direction);
+	
+	joystick_direction = getJoystickDirection(2.5, 2.5, 5.0, 2.5);
+	printf("Direction: %d\n", joystick_direction);
+	
+	joystick_direction = getJoystickDirection(2.5, 2.5, 2.5, 0.0);
+	printf("Direction: %d\n", joystick_direction);
+	
+	joystick_direction = getJoystickDirection(2.5, 2.5, 2.5, 5.0);
+	printf("Direction: %d\n", joystick_direction);
+	
+	while(1){;}
+
 	
 	return 0;
 }

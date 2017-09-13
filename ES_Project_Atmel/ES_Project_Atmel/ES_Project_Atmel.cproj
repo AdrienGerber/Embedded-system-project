@@ -112,6 +112,12 @@
     <Compile Include="ES_Project_2.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="joystick_driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="joystick_driver.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="uart_driver.c">
       <SubType>compile</SubType>
     </Compile>

@@ -11,7 +11,7 @@
 #include <stdlib.h>
 
 
-int main(void){
+int main1(void){
 	/*ASSIGNMENT 1
 	unsigned char received_value;
 	uart_init(31); // from BR formula in datasheet
