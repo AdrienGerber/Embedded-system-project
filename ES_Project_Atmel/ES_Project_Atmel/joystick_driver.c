@@ -11,12 +11,11 @@
 
 
 
-
 joyposition getAnalogPosition(float horizontal_voltage, float vertical_voltage){
 	joyposition AnalogPosition = {0.0, 0.0};
 	
-	AnalogPosition.x = (horizontal_voltage * MAX_VOLTAGE_HORIZONTAL) / 100;
-	AnalogPosition.y = (vertical_voltage * MAX_VOLTAGE_VERTICAL) / 100;
+	AnalogPosition.x = (horizontal_voltage / (float)MAX_VOLTAGE_HORIZONTAL) * (float)100;
+	AnalogPosition.y = (vertical_voltage / (float)MAX_VOLTAGE_VERTICAL) * (float)100;
 	
 	return AnalogPosition;
 } 
@@ -38,40 +37,44 @@ int getJoystickDirection(float horizontal_voltage1, float vertical_voltage1, flo
 	
 	//printf("P1X: %f, P1Y: %f, P2X: %f, P2Y: %f \n", Position1.x, Position1.y, Position2.x, Position2.y);
 	
-	double horizontal_diff = Position2.x - Position1.x + 5.0;
-	double vertical_diff = Position2.y - Position1.y + 5.0;
+	float horizontal_diff = 100.0 + Position2.x - Position1.x;
+	float vertical_diff = 100.0 + Position2.y - Position1.y;
+	int bNeutral=0; //Equal 1 if we didnt move
 	
-	if (horizontal_diff > 5.0) // means we go right
+	if(Position1.x == Position2.x && Position1.y == Position2.y){
+		bNeutral=1;
+	}
+	
+	if (horizontal_diff > 100.0) // means we go right
 		{horizontal_direction = 1;} 
-	if (vertical_diff > 5.0) // means we go up
+	if (vertical_diff > 100.0) // means we go up
 		{vertical_direction = 1;}
 	
 	//strcpy(direction, "NEUTRAL");
 	
-	switch(horizontal_direction) {
-		case 0 : // means left
-			if (abs(horizontal_diff) >= abs(vertical_diff)) // priority given to horizontal movement
-				//{strcpy(direction, "LEFT");}
-				{direction = LEFT;}
-			break;
-		case 1 : // means right
-			if (abs(horizontal_diff) >= abs(vertical_diff))
-				//{strcpy(direction, "RIGHT");}
-				{direction = RIGHT;}	
-			break;	
+	if(horizontal_direction==0){
+		if (fabs(horizontal_diff-100.0) >= fabs(vertical_diff-100.0) && bNeutral==0){ // priority given to horizontal movement
+			//strcpy(direction, "LEFT");
+			direction = LEFT;
+		}
 	}
-	
-	switch(vertical_direction) {
-		case 0 : // means down
-			if (abs(vertical_diff) > abs(horizontal_diff))
-				//{strcpy(direction, "DOWN");}
-				{direction = DOWN;}
-			break;
-		case 1 : // means up
-			if (abs(vertical_diff) > abs(horizontal_diff))
-				//{strcpy(direction, "UP");}
-				{direction = UP;}
-			break;
+	if(horizontal_direction==1){
+		if (fabs(horizontal_diff-100.0) >= fabs(vertical_diff-100.0) && bNeutral==0){ // priority given to horizontal movement
+			//strcpy(direction, "RIGHT");
+			direction = RIGHT;
+		}
+	}
+	if(vertical_direction==0){
+		if (fabs(horizontal_diff-100.0) < fabs(vertical_diff-100.0)){ 
+			//strcpy(direction, "DOWN");
+			direction = DOWN;
+		}
+	}
+	if(vertical_direction==1){
+		if (fabs(horizontal_diff-100.0) < fabs(vertical_diff-100.0)){ 
+			//strcpy(direction, "UP");
+			direction = UP;
+		}
 	}
 	
 	if (direction==LEFT){return 0;}

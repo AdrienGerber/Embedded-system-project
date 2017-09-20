@@ -69,19 +69,19 @@ int main(void){
 	
 	//SRAM_test();
 
-	int joystick_direction = getJoystickDirection(2.5, 2.5, 2.5, 2.5);
+	int joystick_direction = getJoystickDirection(2.5, 2.5, 2.5, 2.5); // 4
 	printf("Direction: %d\n", joystick_direction);
 	
-	joystick_direction = getJoystickDirection(2.5, 2.5, 0.0, 2.5);
+	joystick_direction = getJoystickDirection(2.5, 2.5, 0.0, 2.5); //Left = 0
 	printf("Direction: %d\n", joystick_direction);
 	
-	joystick_direction = getJoystickDirection(2.5, 2.5, 5.0, 2.5);
+	joystick_direction = getJoystickDirection(2.5, 2.5, 5.0, 2.5); //Right = 1
 	printf("Direction: %d\n", joystick_direction);
 	
-	joystick_direction = getJoystickDirection(2.5, 2.5, 2.5, 0.0);
+	joystick_direction = getJoystickDirection(2.5, 2.5, 2.5, 0.0); //Down = 2 
 	printf("Direction: %d\n", joystick_direction);
 	
-	joystick_direction = getJoystickDirection(2.5, 2.5, 2.5, 5.0);
+	joystick_direction = getJoystickDirection(2.5, 2.5, 2.5, 5.0); //Up = 3 
 	printf("Direction: %d\n", joystick_direction);
 	
 	while(1){;}
