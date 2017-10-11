@@ -4,8 +4,8 @@
  * Created: 06.09.2017 09:11:29
  *  Author: asgerber
  */ 
-// C:\Users\asgerber\Documents\Atmel Studio\6.2\Embedded-system-project\Embedded-system-project\ES_Project_Atmel\ES_Project_Atmel\ES_Project_2.c
-// Header
+
+ // Header
 // current_state button_neutra
 // neue funktionen 
 
@@ -22,9 +22,6 @@
 #include "ADC_driver.h"
 #include "oled_driver.h"*/
 #include "Menu.h"
-#include "mcp2515_driver.h"
-#include "spi_driver.h"
-#include "can_driver.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <avr/interrupt.h>
@@ -66,44 +63,20 @@ int main(void){
 	fdevopen(&uart_sending, &uart_receiving);
 	uart_init(31);
 	//SRAM_test();
-
+	
+	
+		
 	OLED_init();
 	OLED_reset();
 	
 	// LED Test
 	DDRB |= (1<<PB0);
-	PORTB |= (1<<PB0);
 	
 	//menu_welcome();
 	//_delay_ms(1000);
 	
-	//menu_main();
+	menu_main();
 	
-	printf("\n\nHello world!\n");
-	CAN_init();
-	printf("\n\nHello world!\n");
-		
-	can_message msg={120, 8, {1,1,0,0,1,1,0,1}};
-	
-
-	CAN_send(&msg);
-	can_message msg_received = CAN_receive();
-	printf("id=%d \n", msg_received.id);
-	printf("length=%d \n", msg_received.length);
-	
-	for (int i=0; i < 8; i++)
-	{
-		printf("data[%d]= %d \n", i, msg_received.data[i]);
-	}
-	
-	while (1){
-		/*SPI_write(10);
-		printf("DONE");
-		_delay_ms(100);
-		*/
-	}
-
-	/*
 	while(1){		
 		direction = getJoystickDirectionButton();
 		
@@ -123,8 +96,38 @@ int main(void){
 			//PORTB ^= (1<<PB0);
 		} else {
 			//PORTB ^= (1<<PB0);
-		}		
-	}*/
+		}
+		/*
+		
+		// current_state und button_neutral rausnehmen
+		if (direction == N_B) {
+			//button_neutral_position = 0;
+			//PORTB ^= (1<<PB0);
+		}
+		if ((direction == D_B) ) {
+		//	PORTB ^= (1<<PB0);
+			OLED_erase_arrow(current_arrow_pos,0);
+			if (current_arrow_pos == 4) {
+				current_arrow_pos = 2;
+				} else {
+				current_arrow_pos++;
+			}			
+			OLED_print_arrow(current_arrow_pos,0);
+		} else if ((direction == U_B)) {
+				OLED_erase_arrow(current_arrow_pos,0);
+				if (current_arrow_pos == 2) {
+					current_arrow_pos = 4;
+				} else {
+					current_arrow_pos--;
+			}
+			OLED_print_arrow(current_arrow_pos,0);
+		} else if ((direction == R_B)) {
+			//OLED_reset();
+			//menu = getMenu(current_arrow_pos);			
+		} else if ((direction == L_B)) {
+			menu_main();
+		}*/
+	}	
 }
 
 

@@ -115,6 +115,15 @@
     <Compile Include="ADC_driver.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="can_driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="can_driver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CFile1.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="ES_Project_2.c">
       <SubType>compile</SubType>
     </Compile>
@@ -122,6 +131,33 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="joystick_driver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="mcp2515_driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="mcp2515_driver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Menu.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Menu.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="oled_driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="oled_driver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="oled_fonts.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi_driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi_driver.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="uart_driver.c">

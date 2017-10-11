@@ -4,8 +4,8 @@
  * Created: 06.09.2017 09:11:29
  *  Author: asgerber
  */ 
-// C:\Users\asgerber\Documents\Atmel Studio\6.2\Embedded-system-project\Embedded-system-project\ES_Project_Atmel\ES_Project_Atmel\ES_Project_2.c
-// Header
+
+ // Header
 // current_state button_neutra
 // neue funktionen 
 
